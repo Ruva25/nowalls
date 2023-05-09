@@ -1,0 +1,478 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  margin: 30px 0;
+}
+header img {
+  width: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+header .nav-item {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: orange;
+  color: white;
+}
+header .nav-item.open {
+  display: block;
+}
+header .nav-item ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+header .nav-item li {
+  margin: 48px;
+  font-size: 30px;
+}
+header .nav-item a {
+  text-decoration: none;
+  color: white;
+}
+
+.hum {
+  height: 50px;
+  width: 50px;
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 9px;
+  z-index: 1;
+}
+.hum span {
+  height: 4px;
+  width: 100%;
+  background-color: black;
+  display: block;
+  border-radius: 25%;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner h3 {
+  font-size: x-large;
+}
+.banner h4 span {
+  color: orangered;
+  margin-top: 10px;
+}
+.banner .hr {
+  display: flex;
+  margin-top: 15px;
+}
+.banner .hr .emp {
+  background-color: orangered;
+  width: 50px;
+  height: 2px;
+  margin-top: 7px;
+}
+.banner .hr p {
+  margin-left: 15px;
+}
+
+.pics {
+  margin: 30px 0px;
+}
+.pics .col-md-3 img {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.driven .col-md-6 h3 {
+  font-size: medium;
+  color: orangered;
+}
+.driven .col-md-6 p {
+  font-size: xx-small;
+  line-height: 15px;
+  margin: 20px 0;
+}
+.driven .col-md-6 img {
+  width: 100%;
+  margin-left: 40px;
+}
+
+.services {
+  background-color: rgb(0, 49, 66);
+  width: 100%;
+}
+.services h3 {
+  font-size: x-large;
+  color: white;
+}
+.services .col-md-4 {
+  margin: 20px 0;
+  background-color: rgb(0, 57, 79);
+  text-align: center;
+}
+.services .col-md-4 img {
+  width: 100%;
+}
+.services .col-md-4 h5 {
+  color: rgb(215, 123, 65);
+  margin: 10px 0;
+  font-size: larger;
+}
+.services .col-md-4 .emp {
+  background-color: rgb(215, 123, 65);
+  width: 70vw;
+  height: 2px;
+}
+.services .col-md-4 p {
+  color: white;
+  font-size: xx-small;
+  line-height: 15px;
+  margin: 20px 0;
+}
+
+.subcribe h4 {
+  font-size: small;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.subcribe .btn {
+  background-color: rgb(0, 57, 79);
+  color: white;
+  width: 80%;
+  margin-bottom: 20px;
+}
+.subcribe .mabhutsu img {
+  width: 100%;
+}
+.subcribe .create h4 {
+  color: rgb(215, 123, 65);
+}
+
+.touch .bux img {
+  width: 100%;
+}
+
+.form h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: rgb(215, 123, 65);
+}
+.form h5 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .banner h3 {
+    font-size: 50px;
+  }
+  .banner h4 {
+    font-size: 30px;
+  }
+  .banner p {
+    font-size: 20px;
+  }
+  .driven .lorem {
+    margin-top: 20px;
+  }
+  .driven .lorem h3 {
+    font-size: 30px;
+  }
+  .driven .lorem p {
+    font-size: 15px;
+  }
+  .services .amazing h3 {
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+  .subcribe .create h4 {
+    font-size: 50px;
+  }
+  .form h3 {
+    font-size: 30px;
+  }
+  .form h5 {
+    font-size: 20px;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .header-inner img {
+    width: 200px;
+  }
+  .header-inner .hum {
+    display: none;
+  }
+  .header-inner .nav-item {
+    display: block;
+    height: auto;
+    width: 60%;
+    position: relative;
+    background-color: white;
+  }
+  .header-inner .nav-item ul {
+    flex-direction: row;
+  }
+  .header-inner .nav-item li {
+    margin: 20px;
+  }
+  .header-inner .nav-item li a {
+    color: black;
+    font-family: baloo;
+  }
+  .header-inner .nav-item li em {
+    color: orange;
+  }
+  .banner .inovative h3 {
+    font-family: baloo;
+  }
+  .banner .inovative h4 {
+    font-family: baloo;
+  }
+  .banner .inovative p {
+    font-family: baloo;
+  }
+  .pics {
+    padding-bottom: 40px;
+  }
+  .pics img {
+    width: 100%;
+  }
+  .driven {
+    margin-top: 30px;
+  }
+  .driven .lorem h3 {
+    font-family: baloo;
+    font-size: 50px;
+  }
+  .driven .lorem p {
+    font-family: baloo;
+  }
+  .services {
+    margin-bottom: 70px;
+  }
+  .services .amazing h3 {
+    font-family: baloo;
+  }
+  .services h5 {
+    font-family: baloo;
+  }
+  .services p {
+    font-family: baloo;
+    font-size: 20px;
+  }
+  .subcribe {
+    margin-bottom: 80px;
+  }
+  .subcribe .create h4 {
+    font-family: baloo;
+    font-size: 50px;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .subcribe .create button {
+    font-family: baloo;
+  }
+  .touch {
+    background-color: rgb(238, 237, 237);
+  }
+  .touch .form h3 {
+    font-family: baloo;
+  }
+  .touch .form h5 {
+    font-family: baloo;
+  }
+  .touch .btn {
+    background-color: black;
+    margin-top: 40px;
+    width: 100%;
+    height: 80px;
+    color: white;
+    font-family: baloo;
+    font-size: 30px;
+  }
+  .last {
+    background: url(./imgs/Rectangle\ 80.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 120px 30px;
+  }
+  .last .differ h3 {
+    font-family: baloo;
+    color: white;
+    font-size: 50px;
+  }
+  .last .differ p {
+    font-family: baloo;
+    font-size: 30px;
+    color: white;
+    margin-top: 40px;
+  }
+  .africa {
+    text-align: center;
+  }
+  .africa img {
+    justify-content: center;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+/* Set width to make card deck cards 100% width *//*# sourceMappingURL=style.css.map */
